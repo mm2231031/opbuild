@@ -4,11 +4,13 @@
 
 ### 系统要求
 
-1.要求1core以上的处理器，至少2GB以上系统内存，2GB的swap空间；
+1. 要求1core以上的处理器，至少2GB以上系统内存，2GB的swap空间；
 
-2.要求40GB以上的磁盘空间，用于存放编译目录
+2. 要求40GB以上的磁盘空间，用于存放编译目录
 
-3.必须使用支持Linux docker的操作系统
+3. 必须使用支持Linux docker的操作系统
+
+4. 已经安装docker并能正常使用
 
 ## 使用方法
 
@@ -25,6 +27,7 @@
 
     # 指定编译存放路径
     export OPDIR={youdir}
+
     # 使用alias生成编译命令
     cat >/etc/profile.d/opbuild.sh <<EOF
     #!/bin/bash
