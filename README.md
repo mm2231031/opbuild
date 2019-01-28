@@ -54,7 +54,7 @@
 
 ### 下载docker镜像
 
-    docker push jackmo233/opbuild
+    docker pull jackmo233/opbuild
 
 ### 生成命令
 
