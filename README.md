@@ -50,6 +50,10 @@
     # 预下载dl包（不推荐）
     opmake download
 
+### 卸载
+
+    rm -rf /etc/profile.d/opbuild.sh &&docker rmi myopmake:latest &&docker rmi ubuntu:14.04 &&source /etc/profile
+    
 ## 使用预先生成的docker镜像
 
 ### 下载docker镜像
@@ -69,3 +73,6 @@
     
     # 重新载入环境变量
     source /etc/profile
+    
+### 卸载
+    rm -rf /etc/profile.d/opbuild.sh &&docker rmi jackmo233/opbuild:latest &&docker rmi ubuntu:14.04 &&source /etc/profile
