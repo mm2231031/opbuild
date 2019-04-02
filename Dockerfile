@@ -4,4 +4,4 @@ COPY build.sh /tmp/build.sh
 COPY sources.list.trusty /etc/apt/sources.list
 ADD src/ /src/
 RUN /bin/bash /tmp/build.sh
-CMD /bin/bash
+CMD /src/opbuild.sh
