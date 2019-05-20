@@ -9,16 +9,16 @@ fi
 
 case $1 in
 	update)
-		su - opbuild -c /src/opupdate.sh
+		bash -c /src/opupdate.sh
 		;;
 	config)
-		su - opbuild -c /src/opconfig.sh
+		bash -c /src/opconfig.sh
 		;;
 	make)
-		su - opbuild -c /src/opcompile.sh
+		bash -c /src/opcompile.sh
 		;;
 	download)
-		su - opbuild -c /src/opdownload.sh
+		bash -c /src/opdownload.sh
 		;;
 	*)
 		echo "参数必须为 '|update|config|make|download|'！"
