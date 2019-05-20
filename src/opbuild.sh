@@ -8,20 +8,20 @@ fi
 
 
 case $1 in
-	update)
+	pull)
 		bash -c /src/opupdate.sh
 		;;
-	config)
+	conf)
 		bash -c /src/opconfig.sh
 		;;
 	make)
 		bash -c /src/opcompile.sh
 		;;
-	download)
+	dl)
 		bash -c /src/opdownload.sh
 		;;
 	*)
-		echo "参数必须为 '|update|config|make|download|'！"
+		echo "参数必须为 '|pull|conf|make|dl|'！"
 		exit 2
 		;;
 esac

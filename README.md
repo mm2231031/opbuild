@@ -39,16 +39,16 @@
 ### 命令格式
 
     # 升级/获取源码
-    opmake update
+    opmake pull
 
     # 配置编译选项
-    opmake config
+    opmake conf
 
     # 开始编译
     opmake make
 
     # 预下载dl包（不推荐）
-    opmake download
+    opmake dl
 
 ### 卸载
 
