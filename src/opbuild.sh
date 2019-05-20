@@ -3,7 +3,7 @@
 OWN=$(ls -ld /opt/opbuild |awk '{print $3}')
 
 if [ $OWN != opbuild ];then
-	chown -R opbuild:opbuild /opt/opbuild
+	sudo chown -R opbuild:opbuild /opt/opbuild
 fi
 
 
