@@ -1,6 +1,8 @@
 #!/bin/bash
-
+USERHOME=/opt/opbuild
 OWN=$(ls -ld /opt/opbuild |awk '{print $3}')
+
+cd $USERHOME
 
 if [ $OWN != opbuild ];then
 	sudo chown -R opbuild:opbuild /opt/opbuild
