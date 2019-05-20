@@ -14,7 +14,7 @@ opcore(){
         while $flag
         do
                 expr $CORE + 0 &>/dev/null
-                [ $? -eq 0 ] && flag=false  ||  read -p "Please enter an integer greater than or equal to "1": " CORE
+                [ $? -eq 0 ] && flag=false  ||  read -p "请输入大于或等于1的整数！：" CORE
         done
 
 }
