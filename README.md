@@ -59,7 +59,7 @@
 
 ### 卸载
 
-    rm -rf /etc/profile.d/opbuild.sh &&docker rmi myopmake:latest &&docker rmi ubuntu:14.04 &&source /etc/profile
+    rm -rf /etc/profile.d/opbuild.sh &&docker rmi jackmo233/opbuild:latest
     
 ## 自己生产镜像
 
