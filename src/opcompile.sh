@@ -1,12 +1,16 @@
 #!/bin/bash
 opcompile(){
         starttime=$(date +'%Y-%m-%d %H:%M:%S')
-        cd lede
-        make V=s -j$CORE
-	HOW=$(echo $?)
+            # 开始
+            cd lede
+            make V=s -j$CORE
+	    HOW=$(echo $?)
+	    # 结束
         endtime=$(date +'%Y-%m-%d %H:%M:%S')
-	start_seconds=$(date --date="$starttime" +%s);
-	end_seconds=$(date --date="$endtime" +%s);
+	
+	start_seconds=$(date --date="$starttime" +%s)
+	end_seconds=$(date --date="$endtime" +%s)
+	
         if [ $HOW -eq 0 ];then
 	    echo "编译完成，开始时间：$starttime；结束时间：$endtime；总耗时：$((end_seconds-start_seconds))秒。"
 	else
