@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:20.04
 MAINTAINER Jack Mo <mo2231031@live.cn>
 COPY build.sh /tmp/build.sh
 # 自定义构建请去掉下行注释
